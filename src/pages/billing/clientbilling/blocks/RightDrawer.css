@@ -1,0 +1,79 @@
+.right-drawer {
+  position: fixed;
+  top: 0;
+  right: -60%;
+  height: 80%;
+  width: 40%;
+  background-color: #fff;
+  /* box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); */
+  overflow-y: auto;
+  transition: right 0.3s ease;
+  z-index: 1050;
+  box-shadow: -5px -5px 10px -2px lightgray !important;
+}
+
+
+.right-drawer.open {
+  right: 0;
+}
+
+.drawer-header {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.drawer-body {
+  padding: 15px;
+}
+.invoice-panel {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.right-drawer table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+
+.right-drawer th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+
+
+
+
+.right-drawer .totals p {
+  margin: 5px 0;
+}
+
+.right-drawer .notification-preview {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.select-content {
+  z-index: 1100 !important; 
+  position: absolute; 
+  border: 1px solid lightgray;
+  /* width: 300px; */
+  width: var(--radix-select-trigger-width);
+	max-height: var(--radix-select-content-available-height);
+}
+
+@media print {
+    .left-menu { /* Replace with the actual class or ID of your left menu */
+        display: none !important;
+    }
+    .usage-tracking { /* Optional: Adjust the content to fill the space */
+        margin: 0;
+        width: 100%;
+    }
+}

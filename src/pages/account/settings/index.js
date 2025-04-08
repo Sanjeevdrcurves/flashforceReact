@@ -1,0 +1,1 @@
+export { default as UserPreferencePage } from './UserPreferencePage';

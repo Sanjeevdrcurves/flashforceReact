@@ -1,0 +1,6 @@
+.tableNoBorder th, 
+.tableNoBorder td {
+    border: 0px !important; /* Override global style */
+    padding: 5px;
+    text-align: left;
+}

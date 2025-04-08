@@ -1,0 +1,37 @@
+/* RightDrawer.css */
+
+.right-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1000; /* Ensure this is high */
+  }
+  
+  .right-drawer.open {
+    transform: translateX(0);
+  }
+  
+  .drawer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .drawer-body {
+    padding: 15px;
+    overflow-y: auto;
+  }
+  
+  .select-content {
+    z-index: 1100 !important; /* Ensure dropdown appears above the drawer */
+    position: absolute; /* Necessary for proper placement */
+  }
+  

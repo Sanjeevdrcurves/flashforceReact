@@ -1,0 +1,20 @@
+.border-light-grey {
+  
+
+  border: 1px solid lightgray;
+}
+
+/* Set fixed height for table header */
+.header-cell {
+  height: 50px; /* Set your desired height here */
+  vertical-align: middle; /* Align the content vertically */
+  padding-top: 10px; /* Adjust padding if needed */
+  padding-bottom: 10px; /* Adjust padding if needed */
+}
+
+/* Adjust other table header cell styles if needed */
+th {
+  text-align: center;
+  background-color: #f5f5f5; /* Optional: you can add background for the header */
+  font-weight: bold; /* Optional: you can set font weight */
+}

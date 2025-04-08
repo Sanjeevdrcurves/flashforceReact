@@ -1,0 +1,4 @@
+.menu-container-scroll {
+    overflow-y: auto;
+    height: 100vh;
+}
